@@ -168,6 +168,7 @@ body{
                     font-size: 1.25rem;
 
                     @include media.xs{
+                        font-size: .8rem;
                         width: 100%;
                         margin: 0rem;
                         padding: 1rem;
@@ -202,6 +203,12 @@ body{
         grid-template-columns: 1fr 1fr;
         align-items: center;
 
+        @include media.xs{
+            grid-template-columns: 1fr;
+            justify-items: center;
+            align-items: center;
+        }
+
         @include media.sm{
             grid-template-columns: 1fr;
             justify-items: center;
@@ -214,6 +221,14 @@ body{
             position: absolute;
             margin-left: -3rem;
             margin-top: 8rem;
+
+            @include media.xs{
+                position: relative;
+                width: 20rem;
+                margin: 0rem;
+                margin-left: -1rem;
+                overflow: hidden;
+            }
 
             @include media.sm{
                 position: relative;
@@ -234,6 +249,15 @@ body{
             text-align: right;
             width: 80%;
 
+            @include media.xs{
+                margin-top: -1rem;
+                padding-top: 0rem;
+                padding-bottom: 3rem;
+                grid-column-start: 1;
+                text-align: center;
+                width: 90%;
+            }
+
             @include media.sm{
                 margin-top: -2rem;
                 padding-top: 0rem;
@@ -250,6 +274,10 @@ body{
                 font-family: "Scope One";
                 color: #BC2026;
                 font-size: 5rem;
+
+                @include media.xs{
+                    font-size: 3rem;
+                }
             }
             p{
                 font-size: 1rem;
@@ -268,6 +296,13 @@ body{
                 border: none;
                 border-radius: 50px;
 
+                @include media.xs{
+                    width: 90%;
+                    margin-top: 1rem;
+                    font-size: .9rem;
+                    padding: .75rem;
+                }
+
                 @include media.sm{
                     width: 90%;
                 }
@@ -285,8 +320,15 @@ body{
             font-size: 5rem;
             margin-right: 5rem;
 
+            @include media.xs{
+                font-size: 3rem;
+                margin-right: 0rem;
+                text-align: center;
+            }
+
             @include media.sm{
                 text-align: center;
+                margin-right: 0rem;
             }
             
         }

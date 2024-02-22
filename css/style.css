@@ -147,6 +147,7 @@ body nav .nav-wrapper #nav-items a {
 }
 @media (max-width: 500px) {
   body nav .nav-wrapper #nav-items a {
+    font-size: 0.8rem;
     width: 100%;
     margin: 0rem;
     padding: 1rem;
@@ -172,6 +173,13 @@ body header {
   grid-template-columns: 1fr 1fr;
   align-items: center;
 }
+@media (max-width: 500px) {
+  body header {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+}
 @media (min-width: 501px) and (max-width: 767px) {
   body header {
     grid-template-columns: 1fr;
@@ -184,6 +192,15 @@ body header img {
   position: absolute;
   margin-left: -3rem;
   margin-top: 8rem;
+}
+@media (max-width: 500px) {
+  body header img {
+    position: relative;
+    width: 20rem;
+    margin: 0rem;
+    margin-left: -1rem;
+    overflow: hidden;
+  }
 }
 @media (min-width: 501px) and (max-width: 767px) {
   body header img {
@@ -206,6 +223,16 @@ body header .hero-info {
   text-align: right;
   width: 80%;
 }
+@media (max-width: 500px) {
+  body header .hero-info {
+    margin-top: -1rem;
+    padding-top: 0rem;
+    padding-bottom: 3rem;
+    grid-column-start: 1;
+    text-align: center;
+    width: 90%;
+  }
+}
 @media (min-width: 501px) and (max-width: 767px) {
   body header .hero-info {
     margin-top: -2rem;
@@ -226,6 +253,11 @@ body header .hero-info h1 {
   color: #BC2026;
   font-size: 5rem;
 }
+@media (max-width: 500px) {
+  body header .hero-info h1 {
+    font-size: 3rem;
+  }
+}
 body header .hero-info p {
   font-size: 1rem;
   font-family: "Montserrat";
@@ -243,6 +275,14 @@ body header .hero-info button {
   border: none;
   border-radius: 50px;
 }
+@media (max-width: 500px) {
+  body header .hero-info button {
+    width: 90%;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    padding: 0.75rem;
+  }
+}
 @media (min-width: 501px) and (max-width: 767px) {
   body header .hero-info button {
     width: 90%;
@@ -259,9 +299,17 @@ body .what-i-do h2 {
   font-size: 5rem;
   margin-right: 5rem;
 }
+@media (max-width: 500px) {
+  body .what-i-do h2 {
+    font-size: 3rem;
+    margin-right: 0rem;
+    text-align: center;
+  }
+}
 @media (min-width: 501px) and (max-width: 767px) {
   body .what-i-do h2 {
     text-align: center;
+    margin-right: 0rem;
   }
 }
 
