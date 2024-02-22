@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url(../fonts/Montserrat-Medium.otf);
+}
+@font-face {
+  font-family: "Scope One";
+  src: url(../fonts/ScopeOne-Regular.ttf);
+}
+body {
+  background-color: blue;
+}
+body a {
+  text-decoration: none;
+}
+body nav {
+  display: flex;
+  justify-content: space-between;
+  z-index: 0;
+  background-image: url("../images/navbackground.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 80%;
+}
+@media (max-width: 500px) {
+  body nav {
+    background-size: cover;
+    background-position: top center;
+    height: 35vw;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  body nav {
+    background-size: cover;
+    background-position: top center;
+    height: 25vw;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+}
+body nav .logo-hamburger {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  body nav .logo-hamburger {
+    margin-top: 1rem;
+    background-color: #fff;
+    height: 10vh;
+    justify-self: flex-end;
+    border-radius: 50px 0 0 50px;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  body nav .logo-hamburger {
+    margin-top: 2rem;
+    background-color: #fff;
+    height: 10vh;
+    justify-self: flex-end;
+    border-radius: 50px 0 0 50px;
+  }
+}
+body nav .logo-hamburger img {
+  width: 15rem;
+  margin-left: 2rem;
+}
+@media (max-width: 500px) {
+  body nav .logo-hamburger img {
+    width: 5rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  body nav .logo-hamburger img {
+    width: 5rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  body nav .logo-hamburger img {
+    width: 12rem;
+  }
+}
+body nav .logo-hamburger #hamburger {
+  display: none;
+  font-size: 3rem;
+  margin: 1rem;
+}
+@media (max-width: 500px) {
+  body nav .logo-hamburger #hamburger {
+    display: block;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  body nav .logo-hamburger #hamburger {
+    display: block;
+  }
+}
+body nav .nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100vw;
+  height: 15vw;
+  margin-top: 1rem;
+}
+body nav .nav-wrapper #nav-items {
+  display: flex;
+  background-color: #fff;
+  width: 90%;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+}
+@media (max-width: 500px) {
+  body nav .nav-wrapper #nav-items {
+    flex-direction: column;
+    justify-content: unset;
+    align-items: flex-end;
+    width: 25%;
+    margin-bottom: 0rem;
+    margin-top: 15rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  body nav .nav-wrapper #nav-items {
+    flex-direction: column;
+    justify-content: unset;
+    align-items: center;
+    width: 25%;
+    margin-bottom: 0rem;
+    margin-top: 15rem;
+  }
+}
+body nav .nav-wrapper #nav-items a {
+  margin: 2rem;
+  font-family: "Scope One";
+  color: #BC2026;
+  font-size: 1.25rem;
+}
+@media (max-width: 500px) {
+  body nav .nav-wrapper #nav-items a {
+    width: 100%;
+    margin: 0rem;
+    border-bottom: 1px solid #BC2026;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  body nav .nav-wrapper #nav-items a {
+    margin: 0rem;
+    padding: 1rem;
+    text-align: right;
+    border-bottom: 1px solid #BC2026;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  body nav .nav-wrapper #nav-items a {
+    font-size: 1rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

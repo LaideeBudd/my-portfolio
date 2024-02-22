@@ -1,0 +1,199 @@
+@use "reset";
+@use "media-query" as media;
+
+@font-face {
+    font-family: "Montserrat";
+    src:
+      local("Montserrat"),
+      url(../fonts/Montserrat-Medium.otf)
+  }
+
+  @font-face {
+    font-family: "Scope One";
+    src: url(../fonts/ScopeOne-Regular.ttf);
+  }
+
+body{
+    background-color: blue;
+
+    a{
+        text-decoration: none;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+
+        z-index: 0;
+        background-image: url("../images/navbackground.svg");
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-size: 80%;
+
+        @include media.xs{
+            background-size: cover;
+            background-position: top center;
+            height: 35vw;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            
+            
+            
+
+        }
+
+
+        @include media.sm{
+            background-size: cover;
+            background-position: top center;
+            height: 25vw;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            
+            
+            
+
+        }
+
+        .logo-hamburger{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            @include media.xs{
+                margin-top: 1rem;
+                background-color: #fff;
+                height: 10vh;
+
+                justify-self: flex-end;
+                border-radius: 50px 0 0 50px;
+                
+            }
+
+            @include media.sm{
+                margin-top: 2rem;
+                background-color: #fff;
+                height: 10vh;
+
+                justify-self: flex-end;
+                border-radius: 50px 0 0 50px;
+                
+            }
+
+
+            img{
+                width: 15rem;
+                margin-left: 2rem;
+
+                @include media.xs{
+                    width: 5rem;
+                }
+    
+                @include media.sm{
+                    width: 5rem;
+                }
+    
+                @include media.md{
+                    width: 12rem;
+                }
+    
+            }
+    
+            #hamburger{
+                display: none;
+                font-size: 3rem;
+                margin: 1rem;
+    
+    
+                @include media.xs{
+                    display: block;
+                }
+    
+                @include media.sm{
+                    display: block;
+                }
+            }
+        }
+
+
+        .nav-wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: 100vw;
+            height: 15vw;
+            margin-top: 1rem;
+
+
+
+
+
+            
+
+
+            #nav-items{
+                display: flex;
+                background-color: #fff;
+                width: 90%;
+                justify-content: space-around;
+                margin-bottom: 3rem;
+
+                @include media.xs{
+                    flex-direction: column;
+                    justify-content: unset;
+                    align-items: flex-end;
+                    width: 25%;
+                    margin-bottom: 0rem;
+                    margin-top: 15rem;
+                    
+                }
+
+
+                @include media.sm{
+                    flex-direction: column;
+                    justify-content: unset;
+                    align-items: center;
+                    width: 25%;
+                    margin-bottom: 0rem;
+                    margin-top: 15rem;
+                    
+                }
+
+                a{
+                    margin: 2rem;
+                    font-family: "Scope One";
+                    color: #BC2026;
+                    font-size: 1.25rem;
+
+                    @include media.xs{
+                        width: 100%;
+                        margin: 0rem;
+                        
+                        border-bottom: 1px solid #BC2026;
+
+                    }
+
+                    @include media.sm{
+                        margin: 0rem;
+                        padding: 1rem;
+                        text-align: right;
+                        border-bottom: 1px solid #BC2026;
+                        width: 100%;
+
+                    }
+
+                   
+
+                    @include media.md{
+                        font-size: 1rem;
+                    }
+
+                    
+
+                }
+            }
+        }
+    }
+
+
+    
+}
