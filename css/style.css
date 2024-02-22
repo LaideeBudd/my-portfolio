@@ -13,7 +13,7 @@
   src: url(../fonts/ScopeOne-Regular.ttf);
 }
 body {
-  background-color: blue;
+  background-color: #fff;
 }
 body a {
   text-decoration: none;
@@ -21,7 +21,6 @@ body a {
 body nav {
   display: flex;
   justify-content: space-between;
-  z-index: 0;
   background-image: url("../images/navbackground.svg");
   background-repeat: no-repeat;
   background-position: right top;
@@ -91,6 +90,7 @@ body nav .logo-hamburger #hamburger {
   display: none;
   font-size: 3rem;
   margin: 1rem;
+  color: #BC2026;
 }
 @media (max-width: 500px) {
   body nav .logo-hamburger #hamburger {
@@ -125,6 +125,7 @@ body nav .nav-wrapper #nav-items {
     width: 25%;
     margin-bottom: 0rem;
     margin-top: 15rem;
+    z-index: 1;
   }
 }
 @media (min-width: 501px) and (max-width: 767px) {
@@ -135,6 +136,7 @@ body nav .nav-wrapper #nav-items {
     width: 25%;
     margin-bottom: 0rem;
     margin-top: 15rem;
+    z-index: 1;
   }
 }
 body nav .nav-wrapper #nav-items a {
@@ -147,6 +149,7 @@ body nav .nav-wrapper #nav-items a {
   body nav .nav-wrapper #nav-items a {
     width: 100%;
     margin: 0rem;
+    padding: 1rem;
     border-bottom: 1px solid #BC2026;
   }
 }
@@ -162,6 +165,103 @@ body nav .nav-wrapper #nav-items a {
 @media (min-width: 768px) and (max-width: 1199px) {
   body nav .nav-wrapper #nav-items a {
     font-size: 1rem;
+  }
+}
+body header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  body header {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+}
+body header img {
+  width: 43rem;
+  position: absolute;
+  margin-left: -3rem;
+  margin-top: 8rem;
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  body header img {
+    position: relative;
+    width: 40rem;
+    margin: 0rem;
+    margin-left: -5rem;
+    overflow: hidden;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  body header img {
+    width: 35rem;
+  }
+}
+body header .hero-info {
+  grid-column-start: 2;
+  padding-top: 8rem;
+  padding-bottom: 15rem;
+  text-align: right;
+  width: 80%;
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  body header .hero-info {
+    margin-top: -2rem;
+    padding-top: 0rem;
+    padding-bottom: 3rem;
+    grid-column-start: 1;
+    text-align: center;
+    width: 90%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  body header .hero-info {
+    width: 90%;
+  }
+}
+body header .hero-info h1 {
+  font-family: "Scope One";
+  color: #BC2026;
+  font-size: 5rem;
+}
+body header .hero-info p {
+  font-size: 1rem;
+  font-family: "Montserrat";
+}
+body header .hero-info button {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  align-self: center;
+  width: 100%;
+  text-decoration: none;
+  font-family: "Scope One";
+  padding: 1.5rem;
+  background-color: #BC2026;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  body header .hero-info button {
+    width: 90%;
+  }
+}
+body .what-i-do {
+  background-color: #00AEEF;
+  padding-top: 3rem;
+}
+body .what-i-do h2 {
+  text-align: right;
+  color: #fff;
+  font-family: "Scope One";
+  font-size: 5rem;
+  margin-right: 5rem;
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  body .what-i-do h2 {
+    text-align: center;
   }
 }
 
