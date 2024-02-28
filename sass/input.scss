@@ -344,7 +344,7 @@ body{
 
             @include media.xs{
                 grid-template-columns: 1fr;
-                height: 170vh;
+                height: auto;
                 justify-items: auto;
             }
 
@@ -494,6 +494,29 @@ body{
 
                 }
             }
+        }
+    }
+
+    .my-work{
+        background-color: #00AEEF;
+        h2{
+            text-align: left;
+            color: #fff;
+            font-family: "Scope One";
+            font-size: 5rem;
+            margin-left: 5rem;
+
+            @include media.xs{
+                font-size: 3rem;
+                margin-left: 0rem;
+                text-align: center;
+            }
+
+            @include media.sm{
+                text-align: center;
+                margin-left: 0rem;
+            }
+            
         }
     }
 }

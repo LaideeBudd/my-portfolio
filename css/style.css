@@ -323,7 +323,7 @@ body .what-i-do .specialties-container {
 @media (max-width: 500px) {
   body .what-i-do .specialties-container {
     grid-template-columns: 1fr;
-    height: 170vh;
+    height: auto;
     justify-items: auto;
   }
 }
@@ -451,6 +451,7 @@ body .what-i-do .specialties-container .inner-container .shape-wrapper-4 {
   }
 }
 body .what-i-do .specialties-container .inner-container img {
+  background-color: transparent;
   width: 20rem;
   height: 20rem;
 }
@@ -480,6 +481,29 @@ body .what-i-do .specialties-container .inner-container p {
 @media (min-width: 768px) and (max-width: 1199px) {
   body .what-i-do .specialties-container .inner-container p {
     margin-top: 0rem;
+  }
+}
+body .my-work {
+  background-color: #00AEEF;
+}
+body .my-work h2 {
+  text-align: left;
+  color: #fff;
+  font-family: "Scope One";
+  font-size: 5rem;
+  margin-left: 5rem;
+}
+@media (max-width: 500px) {
+  body .my-work h2 {
+    font-size: 3rem;
+    margin-left: 0rem;
+    text-align: center;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  body .my-work h2 {
+    text-align: center;
+    margin-left: 0rem;
   }
 }
 
