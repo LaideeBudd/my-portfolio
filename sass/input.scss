@@ -332,5 +332,168 @@ body{
             }
             
         }
+
+        .specialties-container{
+            
+            width: 100vw;
+            height: 35vw;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            justify-items: center;
+            align-items: center;
+
+            @include media.xs{
+                grid-template-columns: 1fr;
+                height: 170vh;
+                justify-items: auto;
+            }
+
+            @include media.sm{
+                grid-template-columns: 1fr 1fr;
+                height: 90vh;
+            }
+
+            @include media.md{
+                grid-template-columns: 1fr 1fr;
+                height: 90vh;
+            }
+
+            .down{
+                margin-top: 5rem;
+
+                @include media.xs{
+                    margin-top: 0rem;
+                }
+
+                @include media.sm{
+                    margin-top: 3rem;
+                }
+
+                @include media.md{
+                    margin-top: 3rem;
+                }
+
+                
+            }
+
+            .up{
+                margin-bottom: 5rem;
+
+                @include media.xs{
+                    margin-bottom: 0rem;
+                }
+
+                @include media.sm{
+                    margin-bottom: 3rem;
+                }
+
+                @include media.md{
+                    margin-bottom: 3rem;
+                }
+            }
+
+            .inner-container{
+                text-align: center;
+
+
+                .shape-wrapper-1{
+                    background-image: url("../images/shapes-1.svg");
+                    width: 20rem;
+                    height: 20rem;
+                    background-size: cover;
+
+                    @include media.sm{
+                        width: 17rem;
+                        height: 17rem;
+                    }
+
+                    @include media.md{
+                        width: 17rem;
+                        height: 17rem;
+                    }
+                }
+                .shape-wrapper-2{
+                    background-image: url("../images/shapes-2.svg");
+                    width: 20rem;
+                    height: 20rem;
+                    background-size: cover;
+
+                    @include media.sm{
+                        width: 17rem;
+                        height: 17rem;
+                    }
+                    
+                    @include media.md{
+                        width: 17rem;
+                        height: 17rem;
+                    }
+                }
+                .shape-wrapper-3{
+                    background-image: url("../images/shapes-3.svg");
+                    width: 20rem;
+                    height: 20rem;
+                    background-size: cover;
+
+                    @include media.sm{
+                        width: 17rem;
+                        height: 17rem;
+                    }
+
+                    @include media.md{
+                        width: 17rem;
+                        height: 17rem;
+                    }
+                }
+                .shape-wrapper-4{
+                    background-image: url("../images/shapes-4.svg");
+                    width: 20rem;
+                    height: 20rem;
+                    background-size: cover;
+
+                    @include media.sm{
+                        width: 17rem;
+                        height: 17rem;
+                    }
+
+                    @include media.md{
+                        width: 17rem;
+                        height: 17rem;
+                    }
+
+                }
+
+                img{
+                    background-color: #808080;
+                    width: 15rem;
+                    height: 15rem;
+
+                    @include media.sm{
+                        width: 13rem;
+                        height: 13rem;
+                    }
+
+                    @include media.md{
+                        width: 13rem;
+                        height: 13rem;
+                    }
+                }
+
+                p{
+                    margin-top: -4rem;
+                    font-family: "Montserrat";
+                    font-size: 1.25rem;
+                    color: #fff;
+
+                    @include media.sm{
+                        margin-top: -3rem;
+                    }
+
+                    @include media.md{
+                        margin-top: -3rem;
+                    }
+
+                }
+            }
+        }
     }
 }

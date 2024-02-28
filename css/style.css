@@ -312,5 +312,176 @@ body .what-i-do h2 {
     margin-right: 0rem;
   }
 }
+body .what-i-do .specialties-container {
+  width: 100vw;
+  height: 35vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  body .what-i-do .specialties-container {
+    grid-template-columns: 1fr;
+    height: 170vh;
+    justify-items: auto;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  body .what-i-do .specialties-container {
+    grid-template-columns: 1fr 1fr;
+    height: 90vh;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  body .what-i-do .specialties-container {
+    grid-template-columns: 1fr 1fr;
+    height: 90vh;
+  }
+}
+body .what-i-do .specialties-container .down {
+  margin-top: 5rem;
+}
+@media (max-width: 500px) {
+  body .what-i-do .specialties-container .down {
+    margin-top: 0rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  body .what-i-do .specialties-container .down {
+    margin-top: 3rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  body .what-i-do .specialties-container .down {
+    margin-top: 3rem;
+  }
+}
+body .what-i-do .specialties-container .up {
+  margin-bottom: 5rem;
+}
+@media (max-width: 500px) {
+  body .what-i-do .specialties-container .up {
+    margin-bottom: 0rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  body .what-i-do .specialties-container .up {
+    margin-bottom: 3rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  body .what-i-do .specialties-container .up {
+    margin-bottom: 3rem;
+  }
+}
+body .what-i-do .specialties-container .inner-container {
+  text-align: center;
+}
+body .what-i-do .specialties-container .inner-container .shape-wrapper-1 {
+  background-image: url("../images/shapes-1.svg");
+  width: 20rem;
+  height: 20rem;
+  background-size: cover;
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  body .what-i-do .specialties-container .inner-container .shape-wrapper-1 {
+    width: 17rem;
+    height: 17rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  body .what-i-do .specialties-container .inner-container .shape-wrapper-1 {
+    width: 17rem;
+    height: 17rem;
+  }
+}
+body .what-i-do .specialties-container .inner-container .shape-wrapper-2 {
+  background-image: url("../images/shapes-2.svg");
+  width: 20rem;
+  height: 20rem;
+  background-size: cover;
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  body .what-i-do .specialties-container .inner-container .shape-wrapper-2 {
+    width: 17rem;
+    height: 17rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  body .what-i-do .specialties-container .inner-container .shape-wrapper-2 {
+    width: 17rem;
+    height: 17rem;
+  }
+}
+body .what-i-do .specialties-container .inner-container .shape-wrapper-3 {
+  background-image: url("../images/shapes-3.svg");
+  width: 20rem;
+  height: 20rem;
+  background-size: cover;
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  body .what-i-do .specialties-container .inner-container .shape-wrapper-3 {
+    width: 17rem;
+    height: 17rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  body .what-i-do .specialties-container .inner-container .shape-wrapper-3 {
+    width: 17rem;
+    height: 17rem;
+  }
+}
+body .what-i-do .specialties-container .inner-container .shape-wrapper-4 {
+  background-image: url("../images/shapes-4.svg");
+  width: 20rem;
+  height: 20rem;
+  background-size: cover;
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  body .what-i-do .specialties-container .inner-container .shape-wrapper-4 {
+    width: 17rem;
+    height: 17rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  body .what-i-do .specialties-container .inner-container .shape-wrapper-4 {
+    width: 17rem;
+    height: 17rem;
+  }
+}
+body .what-i-do .specialties-container .inner-container img {
+  background-color: #808080;
+  width: 15rem;
+  height: 15rem;
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  body .what-i-do .specialties-container .inner-container img {
+    width: 13rem;
+    height: 13rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  body .what-i-do .specialties-container .inner-container img {
+    width: 13rem;
+    height: 13rem;
+  }
+}
+body .what-i-do .specialties-container .inner-container p {
+  margin-top: -4rem;
+  font-family: "Montserrat";
+  font-size: 1.25rem;
+  color: #fff;
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  body .what-i-do .specialties-container .inner-container p {
+    margin-top: -3rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  body .what-i-do .specialties-container .inner-container p {
+    margin-top: -3rem;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
