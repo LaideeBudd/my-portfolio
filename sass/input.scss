@@ -379,7 +379,7 @@ body{
             .up{
                 margin-bottom: 5rem;
 
-                @include media.xs{
+                @include media.sm{
                     margin-bottom: 0rem;
                 }
 
@@ -398,8 +398,8 @@ body{
 
                 .shape-wrapper-1{
                     background-image: url("../images/shapes-1.svg");
-                    width: 20rem;
-                    height: 20rem;
+                    width: 23rem;
+                    height: 23rem;
                     background-size: cover;
 
                     @include media.sm{
@@ -414,8 +414,8 @@ body{
                 }
                 .shape-wrapper-2{
                     background-image: url("../images/shapes-2.svg");
-                    width: 20rem;
-                    height: 20rem;
+                    width: 23rem;
+                    height: 23rem;
                     background-size: cover;
 
                     @include media.sm{
@@ -430,8 +430,8 @@ body{
                 }
                 .shape-wrapper-3{
                     background-image: url("../images/shapes-3.svg");
-                    width: 20rem;
-                    height: 20rem;
+                    width: 23rem;
+                    height: 23rem;
                     background-size: cover;
 
                     @include media.sm{
@@ -446,8 +446,8 @@ body{
                 }
                 .shape-wrapper-4{
                     background-image: url("../images/shapes-4.svg");
-                    width: 20rem;
-                    height: 20rem;
+                    width: 23rem;
+                    height: 23rem;
                     background-size: cover;
 
                     @include media.sm{
@@ -463,9 +463,9 @@ body{
                 }
 
                 img{
-                    background-color: #808080;
-                    width: 15rem;
-                    height: 15rem;
+                    
+                    width: 20rem;
+                    height: 20rem;
 
                     @include media.sm{
                         width: 13rem;
@@ -473,23 +473,23 @@ body{
                     }
 
                     @include media.md{
-                        width: 13rem;
-                        height: 13rem;
+                        width: 18rem;
+                        height: 18rem;
                     }
                 }
 
                 p{
-                    margin-top: -4rem;
+                    margin-top: -2rem;
                     font-family: "Montserrat";
                     font-size: 1.25rem;
                     color: #fff;
 
                     @include media.sm{
-                        margin-top: -3rem;
+                        margin-top: -1rem;
                     }
 
                     @include media.md{
-                        margin-top: -3rem;
+                        margin-top: 0rem;
                     }
 
                 }

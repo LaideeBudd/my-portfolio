@@ -360,7 +360,7 @@ body .what-i-do .specialties-container .down {
 body .what-i-do .specialties-container .up {
   margin-bottom: 5rem;
 }
-@media (max-width: 500px) {
+@media (min-width: 501px) and (max-width: 767px) {
   body .what-i-do .specialties-container .up {
     margin-bottom: 0rem;
   }
@@ -380,8 +380,8 @@ body .what-i-do .specialties-container .inner-container {
 }
 body .what-i-do .specialties-container .inner-container .shape-wrapper-1 {
   background-image: url("../images/shapes-1.svg");
-  width: 20rem;
-  height: 20rem;
+  width: 23rem;
+  height: 23rem;
   background-size: cover;
 }
 @media (min-width: 501px) and (max-width: 767px) {
@@ -398,8 +398,8 @@ body .what-i-do .specialties-container .inner-container .shape-wrapper-1 {
 }
 body .what-i-do .specialties-container .inner-container .shape-wrapper-2 {
   background-image: url("../images/shapes-2.svg");
-  width: 20rem;
-  height: 20rem;
+  width: 23rem;
+  height: 23rem;
   background-size: cover;
 }
 @media (min-width: 501px) and (max-width: 767px) {
@@ -416,8 +416,8 @@ body .what-i-do .specialties-container .inner-container .shape-wrapper-2 {
 }
 body .what-i-do .specialties-container .inner-container .shape-wrapper-3 {
   background-image: url("../images/shapes-3.svg");
-  width: 20rem;
-  height: 20rem;
+  width: 23rem;
+  height: 23rem;
   background-size: cover;
 }
 @media (min-width: 501px) and (max-width: 767px) {
@@ -434,8 +434,8 @@ body .what-i-do .specialties-container .inner-container .shape-wrapper-3 {
 }
 body .what-i-do .specialties-container .inner-container .shape-wrapper-4 {
   background-image: url("../images/shapes-4.svg");
-  width: 20rem;
-  height: 20rem;
+  width: 23rem;
+  height: 23rem;
   background-size: cover;
 }
 @media (min-width: 501px) and (max-width: 767px) {
@@ -451,9 +451,8 @@ body .what-i-do .specialties-container .inner-container .shape-wrapper-4 {
   }
 }
 body .what-i-do .specialties-container .inner-container img {
-  background-color: #808080;
-  width: 15rem;
-  height: 15rem;
+  width: 20rem;
+  height: 20rem;
 }
 @media (min-width: 501px) and (max-width: 767px) {
   body .what-i-do .specialties-container .inner-container img {
@@ -463,24 +462,24 @@ body .what-i-do .specialties-container .inner-container img {
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   body .what-i-do .specialties-container .inner-container img {
-    width: 13rem;
-    height: 13rem;
+    width: 18rem;
+    height: 18rem;
   }
 }
 body .what-i-do .specialties-container .inner-container p {
-  margin-top: -4rem;
+  margin-top: -2rem;
   font-family: "Montserrat";
   font-size: 1.25rem;
   color: #fff;
 }
 @media (min-width: 501px) and (max-width: 767px) {
   body .what-i-do .specialties-container .inner-container p {
-    margin-top: -3rem;
+    margin-top: -1rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   body .what-i-do .specialties-container .inner-container p {
-    margin-top: -3rem;
+    margin-top: 0rem;
   }
 }
 
