@@ -108,7 +108,7 @@ body nav .nav-wrapper {
   justify-content: flex-end;
   width: 100vw;
   height: 15vw;
-  margin-top: 1rem;
+  margin-top: -2rem;
 }
 body nav .nav-wrapper #nav-items {
   display: flex;
@@ -258,6 +258,11 @@ body header .hero-info h1 {
     font-size: 3rem;
   }
 }
+@media (min-width: 501px) and (max-width: 767px) {
+  body header .hero-info h1 {
+    font-size: 4rem;
+  }
+}
 body header .hero-info p {
   font-size: 1rem;
   font-family: "Montserrat";
@@ -310,6 +315,7 @@ body .what-i-do h2 {
   body .what-i-do h2 {
     text-align: center;
     margin-right: 0rem;
+    font-size: 4rem;
   }
 }
 body .what-i-do .specialties-container {
@@ -329,8 +335,8 @@ body .what-i-do .specialties-container {
 }
 @media (min-width: 501px) and (max-width: 767px) {
   body .what-i-do .specialties-container {
-    grid-template-columns: 1fr 1fr;
-    height: 90vh;
+    grid-template-columns: 1fr;
+    height: auto;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -386,8 +392,8 @@ body .what-i-do .specialties-container .inner-container .shape-wrapper-1 {
 }
 @media (min-width: 501px) and (max-width: 767px) {
   body .what-i-do .specialties-container .inner-container .shape-wrapper-1 {
-    width: 17rem;
-    height: 17rem;
+    width: 25rem;
+    height: 25rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -404,8 +410,8 @@ body .what-i-do .specialties-container .inner-container .shape-wrapper-2 {
 }
 @media (min-width: 501px) and (max-width: 767px) {
   body .what-i-do .specialties-container .inner-container .shape-wrapper-2 {
-    width: 17rem;
-    height: 17rem;
+    width: 25rem;
+    height: 25rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -422,8 +428,8 @@ body .what-i-do .specialties-container .inner-container .shape-wrapper-3 {
 }
 @media (min-width: 501px) and (max-width: 767px) {
   body .what-i-do .specialties-container .inner-container .shape-wrapper-3 {
-    width: 17rem;
-    height: 17rem;
+    width: 25rem;
+    height: 25rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -440,8 +446,8 @@ body .what-i-do .specialties-container .inner-container .shape-wrapper-4 {
 }
 @media (min-width: 501px) and (max-width: 767px) {
   body .what-i-do .specialties-container .inner-container .shape-wrapper-4 {
-    width: 17rem;
-    height: 17rem;
+    width: 25rem;
+    height: 25rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -457,8 +463,8 @@ body .what-i-do .specialties-container .inner-container img {
 }
 @media (min-width: 501px) and (max-width: 767px) {
   body .what-i-do .specialties-container .inner-container img {
-    width: 13rem;
-    height: 13rem;
+    width: 22rem;
+    height: 22rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -476,6 +482,7 @@ body .what-i-do .specialties-container .inner-container p {
 @media (min-width: 501px) and (max-width: 767px) {
   body .what-i-do .specialties-container .inner-container p {
     margin-top: -1rem;
+    font-size: 2rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -484,9 +491,14 @@ body .what-i-do .specialties-container .inner-container p {
   }
 }
 body .my-work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #00AEEF;
 }
 body .my-work h2 {
+  align-self: flex-start;
   text-align: left;
   color: #fff;
   font-family: "Scope One";
@@ -498,12 +510,132 @@ body .my-work h2 {
     font-size: 3rem;
     margin-left: 0rem;
     text-align: center;
+    align-self: center;
   }
 }
 @media (min-width: 501px) and (max-width: 767px) {
   body .my-work h2 {
+    align-self: center;
     text-align: center;
     margin-left: 0rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-size: 4rem;
+  }
+}
+body .my-work .grid-container {
+  align-self: center;
+  display: grid;
+  width: 90%;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(2, 23rem);
+  gap: 1rem;
+}
+@media (max-width: 500px) {
+  body .my-work .grid-container {
+    width: 80%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  body .my-work .grid-container {
+    width: 80%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+body .my-work .grid-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+body .my-work .grid-container .img-01 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+@media (max-width: 500px) {
+  body .my-work .grid-container .img-01 {
+    grid-column: auto;
+    grid-row-start: 1;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  body .my-work .grid-container .img-01 {
+    grid-column: auto;
+  }
+}
+body .my-work .grid-container .img-02 {
+  grid-column-start: 3;
+  grid-column-end: 8;
+}
+@media (max-width: 500px) {
+  body .my-work .grid-container .img-02 {
+    grid-column: auto;
+    grid-row-start: 2;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  body .my-work .grid-container .img-02 {
+    grid-column: auto;
+    grid-row-start: 2;
+  }
+}
+body .my-work .grid-container .img-03 {
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+@media (max-width: 500px) {
+  body .my-work .grid-container .img-03 {
+    grid-column: auto;
+    grid-row-start: 3;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  body .my-work .grid-container .img-03 {
+    grid-column: auto;
+    grid-row-start: 3;
+  }
+}
+body .my-work .grid-container .img-04 {
+  grid-row-start: 2;
+  grid-column-start: 5;
+  grid-column-end: 8;
+}
+@media (max-width: 500px) {
+  body .my-work .grid-container .img-04 {
+    grid-column: auto;
+    grid-row-start: 4;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  body .my-work .grid-container .img-04 {
+    grid-column: auto;
+    grid-row-start: 4;
+  }
+}
+body .my-work button {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  align-self: center;
+  width: 100%;
+  justify-self: center;
+  text-decoration: none;
+  font-family: "Scope One";
+  padding: 1.5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  background-color: #BC2026;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+}
+@media (max-width: 500px) {
+  body .my-work button {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    padding: 1.25rem;
   }
 }
 

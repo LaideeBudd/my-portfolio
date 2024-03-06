@@ -122,7 +122,7 @@ body{
             justify-content: flex-end;
             width: 100vw;
             height: 15vw;
-            margin-top: 1rem;
+            margin-top: -2rem;
 
 
 
@@ -275,8 +275,13 @@ body{
                 color: #BC2026;
                 font-size: 5rem;
 
+
                 @include media.xs{
                     font-size: 3rem;
+                }
+
+                @include media.sm{
+                    font-size: 4rem;
                 }
             }
             p{
@@ -329,6 +334,7 @@ body{
             @include media.sm{
                 text-align: center;
                 margin-right: 0rem;
+                font-size: 4rem;
             }
             
         }
@@ -349,8 +355,8 @@ body{
             }
 
             @include media.sm{
-                grid-template-columns: 1fr 1fr;
-                height: 90vh;
+                grid-template-columns: 1fr;
+                height: auto;
             }
 
             @include media.md{
@@ -403,8 +409,8 @@ body{
                     background-size: cover;
 
                     @include media.sm{
-                        width: 17rem;
-                        height: 17rem;
+                        width: 25rem;
+                        height: 25rem;
                     }
 
                     @include media.md{
@@ -419,8 +425,8 @@ body{
                     background-size: cover;
 
                     @include media.sm{
-                        width: 17rem;
-                        height: 17rem;
+                        width: 25rem;
+                        height: 25rem;
                     }
                     
                     @include media.md{
@@ -435,8 +441,8 @@ body{
                     background-size: cover;
 
                     @include media.sm{
-                        width: 17rem;
-                        height: 17rem;
+                        width: 25rem;
+                        height: 25rem;
                     }
 
                     @include media.md{
@@ -451,8 +457,8 @@ body{
                     background-size: cover;
 
                     @include media.sm{
-                        width: 17rem;
-                        height: 17rem;
+                        width: 25rem;
+                        height: 25rem;;
                     }
 
                     @include media.md{
@@ -468,8 +474,8 @@ body{
                     height: 20rem;
 
                     @include media.sm{
-                        width: 13rem;
-                        height: 13rem;
+                        width: 22rem;
+                        height: 22rem;
                     }
 
                     @include media.md{
@@ -486,6 +492,7 @@ body{
 
                     @include media.sm{
                         margin-top: -1rem;
+                        font-size: 2rem;
                     }
 
                     @include media.md{
@@ -498,8 +505,14 @@ body{
     }
 
     .my-work{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center ;
         background-color: #00AEEF;
+
         h2{
+            align-self: flex-start;
             text-align: left;
             color: #fff;
             font-family: "Scope One";
@@ -510,12 +523,139 @@ body{
                 font-size: 3rem;
                 margin-left: 0rem;
                 text-align: center;
+                align-self: center;
             }
 
             @include media.sm{
+                align-self: center;
                 text-align: center;
                 margin-left: 0rem;
+                margin-top: 3rem;
+                margin-bottom: 1rem;
+                font-size: 4rem;
+                
             }
+            
+        }
+
+        .grid-container{
+            align-self: center;
+            display: grid;
+            width: 90%;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: repeat(2, 23rem);
+            gap: 1rem;
+
+            @include media.xs{
+                width: 80%;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(4, 1fr);
+            }
+
+            @include media.sm{
+                width: 80%;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(4, 1fr);
+            }
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                
+            }
+
+            .img-01{
+                grid-column-start: 1;
+                grid-column-end: 3;
+
+                @include media.xs{
+                    grid-column: auto;
+                    grid-row-start: 1;
+                }
+
+                @include media.sm{
+                    grid-column: auto;
+                }
+                
+            }
+
+            .img-02{
+                grid-column-start: 3;
+                grid-column-end: 8;
+
+                @include media.xs{
+                    grid-column: auto;
+                    grid-row-start: 2;
+                }
+
+                @include media.sm{
+                    grid-column: auto;
+                    grid-row-start: 2;
+                }
+            }
+
+            .img-03{
+                grid-row-start: 2;
+                grid-column-start: 1;
+                grid-column-end: 5;
+
+                @include media.xs{
+                    grid-column: auto;
+                    grid-row-start: 3;
+                }
+
+                @include media.sm{
+                    grid-column: auto;
+                    grid-row-start: 3;
+                }
+            }
+
+            .img-04{
+                grid-row-start: 2;
+                grid-column-start: 5;
+                grid-column-end: 8;
+
+                @include media.xs{
+                    grid-column: auto;
+                    grid-row-start: 4;
+                }
+                
+
+                @include media.sm{
+                    grid-column: auto;
+                    grid-row-start: 4;
+                }
+            }
+
+
+        }
+
+        
+
+        button{
+            margin-top: 2rem;
+            font-size: 1.5rem;
+            align-self: center;
+            width: 100%;
+            justify-self: center;
+            text-decoration: none;
+            font-family: "Scope One";
+            padding: 1.5rem;
+            padding-left: 5rem;
+            padding-right: 5rem;
+            background-color: #BC2026;
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+
+            @include media.xs{
+                // width: 90%;
+                margin-top: 1rem;
+                font-size: 1.25rem;
+                padding: 1.25rem;
+            }
+
             
         }
     }
