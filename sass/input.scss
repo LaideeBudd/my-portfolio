@@ -316,9 +316,16 @@ body{
     }
 
     .what-i-do{
+        height: 120vh;
         background-color: #00AEEF;
         padding-top: 3rem;
+
+        @include media.xs{
+            height: auto;
+        }
+
         h2{
+            margin-top: 7rem;
             text-align: right;
             color: #fff;
             font-family: "Scope One";
@@ -510,8 +517,18 @@ body{
         justify-content: center;
         align-items: center ;
         background-color: #00AEEF;
+        height: 120vh;
+
+        @include media.xs{
+            height: auto;
+        }
+
+        @include media.sm{
+            height: auto;
+        }
 
         h2{
+            margin-top: 7rem;
             align-self: flex-start;
             text-align: left;
             color: #fff;
@@ -541,7 +558,7 @@ body{
         .grid-container{
             align-self: center;
             display: grid;
-            width: 90%;
+            width: 70%;
             grid-template-columns: repeat(7, 1fr);
             grid-template-rows: repeat(2, 23rem);
             gap: 1rem;
@@ -658,5 +675,264 @@ body{
 
             
         }
+    }
+
+    .why-me{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center ;
+        background-color: #00AEEF;
+        height: 100vh;
+
+        @include media.xs{
+            height: auto;
+        }
+
+        @include media.sm{
+            height: auto;
+        }
+
+        h2{
+            
+            align-self: flex-start;
+            text-align: left;
+            color: #fff;
+            font-family: "Scope One";
+            font-size: 5rem;
+            margin-left: 5rem;
+
+            @include media.xs{
+                font-size: 3rem;
+                margin-left: 0rem;
+                text-align: center;
+                align-self: center;
+
+                margin-top: 5rem;
+            }
+
+            @include media.sm{
+                align-self: center;
+                text-align: center;
+                margin-left: 0rem;
+                margin-top: 6rem;
+                margin-bottom: 1rem;
+                font-size: 4rem;
+                
+            }
+            
+        }
+
+        .flex-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 5rem;
+
+            @include media.xs{
+                flex-direction: column;
+            }
+
+            @include media.sm{
+                flex-direction: column;
+            }
+
+
+            .down{
+                margin-top: 5rem;
+
+                @include media.xs{
+                    margin-top: 0rem;
+                }
+
+                @include media.sm{
+                    margin-top: 3rem;
+                }
+
+                @include media.md{
+                    margin-top: 3rem;
+                }
+
+                
+            }
+
+            .up{
+                margin-bottom: 5rem;
+
+                @include media.sm{
+                    margin-bottom: 0rem;
+                }
+
+                @include media.sm{
+                    margin-bottom: 3rem;
+                }
+
+                @include media.md{
+                    margin-bottom: 3rem;
+                }
+            }
+
+
+
+            .inner-container{
+                display: flex;
+                align-items: center;
+                text-align: center;
+                margin-left: 3rem;
+                margin-right: 3rem;
+
+                @include media.xs{
+                    margin: 0rem;
+                }
+
+                @include media.sm{
+                    margin: 0rem;
+                }
+
+                @include media.md{
+                    margin-left: .5rem;
+                    margin-right: .5rem;
+
+                }
+
+                .reasons{
+                    background-color: #fff;
+                    width: 18rem;
+                    height: 18rem;
+                    padding: 1rem;
+
+                    @include media.xs{
+                        width: 25rem;
+                        height: 25rem;
+                    }
+
+                    @include media.sm{
+                        width: 35rem;
+                        height: 35rem;
+                        padding: 3rem; 
+                    }
+
+                    @include media.md{
+                        width: 15rem;
+                        height: 15rem;
+                    }
+
+                    h4{
+                        font-family: "Scope One";
+                        color: #BC2026;
+                        font-size: 2rem;
+                        @include media.xs{
+                            font-size: 2rem;
+                        }
+
+                        @include media.sm{
+                            font-size: 3rem;
+                        }
+
+                        @include media.md{
+                            font-size: 1.5rem;
+                        }
+                    }
+                    
+                    p{
+                        font-family: "Montserrat";
+                        padding: 1rem;
+
+                        @include media.xs{
+                            font-size: 1.25rem;
+                        }
+
+                        @include media.sm{
+                            font-size: 1.5rem;
+                        }
+
+                        @include media.md{
+                            font-size: .8rem;
+                        }
+                    }
+                }
+    
+    
+                .shape-wrapper-1{
+                    background-image: url("../images/shapes-1.svg");
+                    width: 23rem;
+                    height: 23rem;
+                    background-size: cover;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    overflow: hidden;
+
+                    @include media.xs{
+                        width: 35rem;
+                        height: 35rem;
+                    }
+    
+                    @include media.sm{
+                        width: 50rem;
+                        height: 50rem;
+                        
+                    }
+
+                    @include media.md{
+                        width: 19rem;
+                        height: 19rem;
+                    }
+                }
+                .shape-wrapper-2{
+                    background-image: url("../images/shapes-2.svg");
+                    width: 23rem;
+                    height: 23rem;
+                    background-size: cover;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    overflow: hidden;
+
+                    @include media.xs{
+                        width: 35rem;
+                        height: 35rem;
+                    }
+
+                    @include media.sm{
+                        width: 50rem;
+                        height: 50rem;
+                        
+                    }
+
+                    @include media.md{
+                        width: 19rem;
+                        height: 19rem;
+                    }
+                }
+                .shape-wrapper-3{
+                    background-image: url("../images/shapes-3.svg");
+                    width: 23rem;
+                    height: 23rem;
+                    background-size: cover;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    overflow: hidden; 
+
+                    @include media.xs{
+                        width: 35rem;
+                        height: 35rem;
+                    }
+    
+                    @include media.sm{
+                        width: 50rem;
+                        height: 50rem;
+                        
+                    }
+
+                    @include media.md{
+                        width: 19rem;
+                        height: 19rem;
+                    }
+                }
+            }
+        }
+
     }
 }
