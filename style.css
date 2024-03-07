@@ -1197,41 +1197,13 @@ body .reviews .flex-container .inner-container .shape-wrapper-3 {
 }
 
 .footer {
-  background-image: url(../images/footer-01.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
   background-color: #00AEEF;
   font-family: "Montserrat";
   display: flex;
-  flex-direction: column;
   align-items: center;
-  color: #fff;
-  font-size: 1.5rem;
+}
+.footer img {
   width: 100vw;
-  height: 60vh;
-}
-@media (max-width: 500px) {
-  .footer {
-    height: 20vh;
-  }
-}
-.footer p {
-  margin-top: 15rem;
-}
-@media (max-width: 500px) {
-  .footer p {
-    margin-top: 0rem;
-  }
-}
-@media (min-width: 501px) and (max-width: 767px) {
-  .footer p {
-    margin-top: 8rem;
-  }
-}
-@media (min-width: 768px) and (max-width: 1199px) {
-  .footer p {
-    margin-top: 10rem;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
