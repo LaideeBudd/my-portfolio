@@ -16,6 +16,12 @@
 }
 body {
   background-color: #fff;
+  scroll-snap-type: y mandatory;
+}
+body .scroll-snap-container {
+  height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 body a {
   text-decoration: none;
@@ -296,7 +302,6 @@ body header .hero-info button {
   }
 }
 body .what-i-do {
-  height: 120vh;
   background-color: #00AEEF;
   padding-top: 3rem;
 }
@@ -505,7 +510,6 @@ body .my-work {
   justify-content: center;
   align-items: center;
   background-color: #00AEEF;
-  height: 120vh;
 }
 @media (max-width: 500px) {
   body .my-work {
@@ -549,7 +553,7 @@ body .my-work .grid-container {
   display: grid;
   width: 70%;
   grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(2, 23rem);
+  grid-template-rows: repeat(2, 18rem);
   gap: 1rem;
 }
 @media (max-width: 500px) {
@@ -665,7 +669,6 @@ body .why-me {
   justify-content: center;
   align-items: center;
   background-color: #00AEEF;
-  height: 100vh;
 }
 @media (max-width: 500px) {
   body .why-me {
@@ -933,7 +936,6 @@ body .reviews {
   justify-content: center;
   align-items: center;
   background-color: #00AEEF;
-  height: 100vh;
 }
 @media (max-width: 500px) {
   body .reviews {

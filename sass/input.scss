@@ -15,6 +15,13 @@
 
 body{
     background-color: #fff;
+    scroll-snap-type: y mandatory;
+
+    .scroll-snap-container{
+        height: 100vh;
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+    }
 
     a{
         text-decoration: none;
@@ -316,7 +323,7 @@ body{
     }
 
     .what-i-do{
-        height: 120vh;
+        // height: 120vh;
         background-color: #00AEEF;
         padding-top: 3rem;
 
@@ -517,7 +524,7 @@ body{
         justify-content: center;
         align-items: center ;
         background-color: #00AEEF;
-        height: 120vh;
+        // height: 120vh;
 
         @include media.xs{
             height: auto;
@@ -560,7 +567,7 @@ body{
             display: grid;
             width: 70%;
             grid-template-columns: repeat(7, 1fr);
-            grid-template-rows: repeat(2, 23rem);
+            grid-template-rows: repeat(2, 18rem);
             gap: 1rem;
 
             @include media.xs{
@@ -683,7 +690,7 @@ body{
         justify-content: center;
         align-items: center ;
         background-color: #00AEEF;
-        height: 100vh;
+        // height: 100vh;
 
         @include media.xs{
             height: auto;
@@ -942,7 +949,7 @@ body{
         justify-content: center;
         align-items: center ;
         background-color: #00AEEF;
-        height: 100vh;
+        // height: 100vh;
 
         @include media.xs{
             height: auto;
@@ -1233,4 +1240,7 @@ body{
         }
     }
 
+    
+
 }
+
